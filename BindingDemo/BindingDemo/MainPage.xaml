@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:BindingDemo"
+             mc:Ignorable="d"
+             x:Class="BindingDemo.MainPage">
+
+    
+
+    <d:ContentPage.BindingContext>
+        <!-- Username-->
+        <local:MainViewModel20/>
+    </d:ContentPage.BindingContext>
+
+    <ContentPage.BindingContext>
+        <!-- Password-->
+        <local:MVVM3/>
+    </ContentPage.BindingContext>
+
+  
+
+
+    <StackLayout Padding="20">
+        <!-- Place new controls here -->
+        <Entry Text="{Binding Username}" Placeholder="Enter username"/>
+        <Entry Text="{Binding Password}" Placeholder="Enter password"/>
+
+        <Button Text="Enter"
+                Clicked="Button_Clicked"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="Black"
+                VerticalOptions="EndAndExpand"
+                HorizontalOptions="EndAndExpand"
+                CornerRadius="20"/>
+    </StackLayout>
+
+</ContentPage>

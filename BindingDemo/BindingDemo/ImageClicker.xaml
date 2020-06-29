@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BindingDemo.Page2">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ImageButton Source="https://www.gamedesigning.org/wp-content/uploads/2017/09/C2.jpg" BackgroundColor="AliceBlue" Margin="0" Clicked="ImageButton_Clicked_3"/>
+                <ImageButton Source="https://static1.gamerantimages.com/wordpress/wp-content/uploads/2019/08/CALL-OF-DUTY-FEATURED-IMAGE.jpg" BackgroundColor="AliceBlue" Margin="0" Clicked="ImageButton_Clicked_2"/>
+                <ImageButton Source="https://i.ytimg.com/vi/X-giWYGYxoM/maxresdefault.jpg" BackgroundColor="AliceBlue" Margin="0" Clicked="ImageButton_Clicked_1"/>
+                <ImageButton Source="https://static2.srcdn.com/wordpress/wp-content/uploads/2018/03/Star-Wars-memes.jpg" BackgroundColor="AliceBlue" Margin="0" Clicked="ImageButton_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
